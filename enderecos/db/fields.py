@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from djangoplus.db.models import CharField, FieldPlus
 from enderecos.forms import fields
 

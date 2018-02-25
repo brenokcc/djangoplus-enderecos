@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from djangoplus.ui.components.forms import widgets
 
 
@@ -8,7 +9,7 @@ class CepWidget(widgets.MaskWidget):
 
     def render(self, name, value=None, attrs={}):
         html = super(CepWidget, self).render(name, value, attrs)
-        prefix = '-' in name and '%s-' % name.split('-')[0] or ''
+        prefix = '-' in name and '{}-'.format(name.split('-')[0]) or ''
         function_name = prefix.replace('-', '__')
         js = """
         <script>
@@ -28,5 +29,5 @@ class CepWidget(widgets.MaskWidget):
             });
         </script>
         """ % dict(name=name, prefix=prefix, function_name=function_name)
-        return '%s%s' % (html, js)
+        return '{}{}'.format(html, js)
 

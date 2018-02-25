@@ -1,32 +1,50 @@
 Metadata-Version: 1.1
 Name: djangoplus-enderecos
-Version: 0.8
+Version: 0.9
 Summary: A simple djangoplus application that contains all regions, states, cities and neighborhoods of Brazil
 Home-page: http://djangoplus.net/
 Author: Breno Silva
 Author-email: brenokcc@yahoo.com.br
 License: BSD License
-Description: =====
-        Endereços
-        =====
+Description: Endereços
+        =======
         
         Enderecos is a simple djangoplus app that contains all the regions, states, cities and neighborhoods of Brazil.
         
+        It has three model classes:
         
-        Quick start
-        -----------
+        - Regiao
+        - Estado
+        - Municipio
+        - Endereco
         
-        1. Add "enderecos" to your INSTALLED_APPS setting like this::
+        ### Dependecies
         
-            INSTALLED_APPS = [
-                ...
-                'enderecos',
-            ]
+        None
         
-        2. Run `python manage.py sync` to create the models and load inital data.
+        ### Steps
         
-        4. Start the development server and visit http://127.0.0.1:8000/
-           to see the menu items.
+        Execute the following steps to use it:
+        
+        1. Install it
+        
+            pip install djangoplus_enderecos
+        
+        
+        1. Add "enderecos" to your INSTALLED_APPS settings
+        
+            INSTALLED_APPS = \[..., 'enderecos']
+        
+        2. Create the tables
+        
+            sync
+        
+        3. Use the models
+        
+        4. Load all cities (optional)
+        
+            python manage.py carregar_cidades
+        
         
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment
