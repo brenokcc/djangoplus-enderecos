@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 from djangoplus.db import models
 from enderecos.db.fields import CepField
 
@@ -14,7 +14,7 @@ class Regiao(models.Model):
         verbose_name = 'Região'
         verbose_name_plural = 'Regiões'
 
-    def __unicode__(self):
+    def __str__(self):
         return '{}'.format(self.nome)
 
 
@@ -31,7 +31,7 @@ class Estado(models.Model):
         verbose_name_plural = 'Estados'
         list_per_page = 50
 
-    def __unicode__(self):
+    def __str__(self):
         return '{}'.format(self.sigla)
 
 
@@ -47,7 +47,7 @@ class Municipio(models.Model):
         verbose_name_plural = 'Municípios'
         list_per_page = 100
 
-    def __unicode__(self):
+    def __str__(self):
         return '{}/{}'.format(self.nome, self.estado)
 
 
@@ -65,6 +65,6 @@ class Endereco(models.Model):
         verbose_name = 'Endereço'
         verbose_name_plural = 'Endereços'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.pk and '{}, {}, {}'.format(self.logradouro, self.numero, self.municipio) or None
 
