@@ -1,12 +1,12 @@
 Metadata-Version: 1.1
 Name: djangoplus-enderecos
-Version: 0.10
+Version: 0.14
 Summary: A simple djangoplus application that contains all regions, states, cities and neighborhoods of Brazil
 Home-page: http://djangoplus.net/
 Author: Breno Silva
 Author-email: brenokcc@yahoo.com.br
 License: BSD License
-Description: Endereços
+Description: Enderecos
         =======
         
         Enderecos is a simple djangoplus app that contains all the regions, states, cities and neighborhoods of Brazil.

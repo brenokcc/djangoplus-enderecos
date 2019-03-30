@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import json
-import urllib.request, urllib.error, urllib.parse
 from urllib.error import HTTPError
-
-from enderecos.models import Municipio, Estado
 from django.http.response import HttpResponse
+from enderecos.models import Municipio, Estado
+import urllib.request, urllib.error, urllib.parse
 
 
 def consultar(request, cep):
@@ -17,7 +16,7 @@ def consultar(request, cep):
         dados = json.loads(urllib.request.urlopen('http://api.postmon.com.br/v1/cep/{}'.format(cep)).read().decode('utf-8'))
         codigo_estado = dados['estado_info']['codigo_ibge']
         codigo_cidade = dados['cidade_info']['codigo_ibge']
-        nome_cidade = cidade = dados['cidade']
+        nome_cidade = dados['cidade']
         
         qs = Municipio.objects.filter(codigo=dados['cidade_info']['codigo_ibge'])
         if qs.exists():

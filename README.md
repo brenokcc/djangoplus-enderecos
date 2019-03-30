@@ -1,4 +1,4 @@
-Endereços
+Enderecos
 =======
 
 Enderecos is a simple djangoplus app that contains all the regions, states, cities and neighborhoods of Brazil.

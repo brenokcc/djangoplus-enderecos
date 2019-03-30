@@ -15,6 +15,7 @@ enderecos/db/fields.py
 enderecos/fixtures/.DS_Store
 enderecos/fixtures/cidades.json.zip
 enderecos/fixtures/initial_data.json.zip
+enderecos/fixtures/test.json
 enderecos/forms/__init__.py
 enderecos/forms/fields.py
 enderecos/forms/widgets.py
@@ -22,16 +23,10 @@ enderecos/management/__init__.py
 enderecos/management/commands/__init__.py
 enderecos/management/commands/carregar_cidades.py
 enderecos/migrations/0001_initial.py
-enderecos/migrations/0001_initial.pyc
+enderecos/migrations/0001_squashed_0006_auto_20170605_2058.py
 enderecos/migrations/0002_initial.py
-enderecos/migrations/0002_initial.pyc
 enderecos/migrations/0003_delete_telefone.py
-enderecos/migrations/0003_delete_telefone.pyc
 enderecos/migrations/0004_auto_20170503_1923.py
-enderecos/migrations/0004_auto_20170503_1923.pyc
 enderecos/migrations/0005_auto_20170503_2210.py
-enderecos/migrations/0005_auto_20170503_2210.pyc
 enderecos/migrations/0006_auto_20170605_2058.py
-enderecos/migrations/0006_auto_20170605_2058.pyc
 enderecos/migrations/__init__.py
-enderecos/migrations/__init__.pyc
