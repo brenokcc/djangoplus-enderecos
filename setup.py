@@ -9,12 +9,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='djangoplus-enderecos',
-    version='0.14',
+    version='0.15',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',
     description='A simple djangoplus application that contains all regions, states, cities and neighborhoods of Brazil',
-    long_description=README,
+    long_description='',
     url='http://djangoplus.net/',
     author='Breno Silva',
     author_email='brenokcc@yahoo.com.br',

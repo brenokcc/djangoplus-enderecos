@@ -54,7 +54,7 @@ class Municipio(models.Model):
 class Endereco(models.Model):
     cep = CepField('CEP', example='59.080-060')
     logradouro = models.CharField('Logradouro', example='Rua Professora Gipse Montenegro')
-    numero = models.IntegerField('Número', example=123)
+    numero = models.CharField('Número', example=123)
     complemento = models.CharField('Complemento', null=True, blank=True, example='Apartamento 101, Torre A')
     municipio = models.ForeignKey(Municipio, verbose_name='Município', filter=True, example='Natal', lazy=True)
     bairro = models.CharField('Bairro', example='Capim Macio')
